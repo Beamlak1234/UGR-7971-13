@@ -1,0 +1,276 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+li a:hover {
+  background-color: goldenrod;
+}
+
+.logo {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: gainsboro;
+  padding: 20px;
+  text-align: center;
+}
+
+.para {
+  color: #333;
+  font-size: 15px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.social-media img {
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.plantovisit {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-top: 10px;
+  background-color: none;
+}
+
+.friendpic,
+.debrepic,
+.lalibela,
+.wonchi {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 400px;
+}
+
+ul.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+}
+
+ul.navbar li {
+  margin: 0 10px;
+}
+
+ul.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-media.mobile {
+  display: none;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.plantovisit {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-top: 10px;
+  background-color: none;
+}
+
+.friendpic,
+.debrepic,
+.lalibela,
+.wonchi {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+address {
+  margin-top: 5px;
+  font-style: normal;
+  justify-content: start;
+}
+
+@media (max-width: 768px) {
+  ul.navbar {
+    flex-direction: column;
+  }
+
+  .friendpic,
+  .debrepic,
+  .lalibela,
+  .wonchi {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .para {
+    font-size: 14px;
+  }
+  
+  .main {
+    align-items: start;
+  }
+  
+  .social-media {
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .social-media img {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .social-media.desktop {
+    display: none;
+  }
+  
+  .social-media.mobile {
+    display: flex;
+  }
+}
+
+.visited {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  list-style: none;
+  background-color: none;
+  padding: 10px;
+  color: white;
+}
+
+.para3 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  list-style: none;
+  background-color: none;
+  padding: 10px;
+  color: white;
+}
+
+.header {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-media {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media img {
+  height: 20px;
+  width: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  min-height: 450px;
+}

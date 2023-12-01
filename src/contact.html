@@ -4,57 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
-    <link rel="stylesheet" href="css/style.css">
- 
+    <link rel="stylesheet" href="../src/css/style.css">
+
+
   </head>
 
   <body>
-    <header>
-      <img class="logo" src="images/images/360_F_405029055_kMGBx9LXwIxSerlc9eEY4bnBpF5X7yri.jpg" alt="logo">
-      
-      <nav>
-          <span><a href="Home.html">Home</a></span>
-          <span><a href="Aboutme.html">About</a></span>
-          <span><a href="Hobbies.html">Hobbies</a></span>
-          <span><a href="Places.html">places</a></span>
-          <span><a href="Contact.html">Contact</a></span>
-          
+    
+    <a href="#menu" class="menu-icon" id="menu"></a>
+    <ul>
+      <li>
+        <img class="logo" src="images2/images/logo.jpg" height='50'
+        width='60' alt="logo">
+      </li>
+      <li><a class="active" href="Home.html">Home</a></li>
+      <li><a href="Aboutme.html">About</a></li>
+      <li><a href="Hobbies.html">Hobbies</a></li>
+      <li><a href="Places.html">Places</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
       </nav>    
   </header>
-
 
   <main class="contact">
     <form action="/submit" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
-    
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br>
 
         <label for="phonenumber">phoneNo:</label>
-        <input type="text" id="phonenumber" required><br>
-    
+        <input type="text" id="phonenumber"  name="phonenumber"required><br>
+
         <label for="message"></label>
         <textarea id="message" name="message" rows="4" required>Enter your message....</textarea><br>
 
-    
+
         <button class="button" type="submit">Submit</button>
       </form>
-    
-      
-          
-    
+
+
+
+
   </main>
 
-  <footer class="footer">
-    <div class="socials">
-
-      <a href="http://instagram.com/"><img  src="images/images/download.png" alt="instagram icon">@beamliiii</a>
-      <a href="http://telegram.com/"><img  src="images/images/images.png" alt="telegram icon">@BeamlakTH</a>
-      
-  </div>
-
+  <footer>
+    <div class="social-media">
+      <a href="https://t.me/BeamlakTH" target="_blank">
+        <img src="images2/images/telegram.jpg" alt="Telegram">
+      </a>
+      <a href="https://instagram.com/beamliiii?utm_source=qr&igshid=YzU1NGVlODEzOA%3D%3D" target="_blank">
+        <img src="images2/images/instagram.png" alt="Instagram">
+      </a>
+    </div>
+    <p class="para">&copy;my social media contacts.</p>
   </footer>
-    
+
   </body>
   </html>

@@ -1,0 +1,728 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: grid; /* Change from flex to grid */
+    grid-template-columns: repeat(6, 1fr); /* Distribute the columns equally */
+  }
+  
+  li {
+    float: left; /* Remove this line */
+  }
+  
+  li a {
+    display: block; /* Change inline-block to block */
+    color: white;
+    text-align: center;
+    padding: 14px 4px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: goldenrod;
+  }
+  
+  .logo {
+    margin: 10px;
+  }
+  
+  /* Main */
+  main {
+    grid-column: 1 / span 12;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    place-items: center;
+    
+  }
+  
+  .grid-item {
+    display: grid;
+    place-items: center;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .grid-item:hover {
+    color: goldenrod;
+  }
+  
+  /* Profile Image */
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    background-image: url("images2/images/me.jpg");
+    background-position: center;
+    border-radius: 100%;
+    justify-items: center;
+    justify-content:space-around
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color:gainsboro;
+    padding: 20px;
+    text-align: center;
+  }
+  .social-media {
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media img {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .para {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  label[for="username"] {
+    color: crimson;
+    grid-column-gap: 2em;
+  }
+  
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: inherit;
+    background-color: seashell;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  img,
+  label,
+  input,
+  textarea,
+  button {
+    margin: 10px;
+  }
+  
+  form {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: center;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .visited,
+  .plantovisit {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap:10px;
+    background-color: none;;
+  }
+  
+  .visited h3,
+  .plantovisit h3 {
+    margin: 0;
+    background-color:none;
+  }
+  
+  .visited img,
+  .plantovisit img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .grid-item .para3 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: none;
+  }
+    
+  .para3 li {
+    margin-bottom: 10px;
+    color:white;
+  }
+  
+  .para3 address {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  Hobbies{
+    display: grid;
+    grid-template-rows: 5,1fr;
+  }
+  /* .sun,.music,.cook,.book{ */
+    /* justify-content: space-between;
+    justify-self:center; */
+  /* } */
+  .sunpic,.musicpic,.bookspic,.cookpic{
+  width:100px;
+  height:100px;
+  border-radius: 100%;
+  }
+  Hobbies {
+    display: grid;
+    place-items: center;
+    text-align:center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    gap:20px;
+    padding:20px;
+  }
+  .sun,
+  .music,
+  .cook,
+  .books {
+    display: grid;
+    place-items: center;
+    width: 1200px;
+    padding: 10px;
+    background-color: black;
+  }
+  
+  .sun > *,
+  .music > *,
+  .cook > *,
+  .books > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+  .sunpic,
+  .musicpic,
+  .cookpic,
+  .bookspic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius:100%;
+  }
+  
+  
+  .para2 {
+    color: white;
+    text-align: center;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  main{min-height: 450px;}
+  .friendpic,.debrepic,.lalibela,.wonchi{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+    justify-content:center;
+    border-radius:5px;
+    text-align:center;
+    
+  }
+ 
+ 
+   .header{  display: grid;
+    justify-content: center;
+    align-items: center;} 
+.image{width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    object-fit: cover;
+margin-left: 400px;}
+    h1{ 
+        margin-top: 10px;
+        margin-left: 100px;
+        text-align: center;
+    }
+
+
+    /* 3#################################### */
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+  
+  li a:hover {
+    background-color: goldenrod;
+  }
+  
+  .logo {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  footer {
+    background-color: gainsboro;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .para {
+    color: #333;
+    font-size: 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .social-media img {
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  .plantovisit {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 10px;
+    background-color: none;
+  }
+  
+  .friendpic,
+  .debrepic,
+  .lalibela,
+  .wonchi {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  ul {
+    display: block; 
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .social-media img {
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  .plantovisit {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 10px;
+    background-color: none;
+  }
+  
+  .friendpic,
+  .debrepic,
+  .lalibela,
+  .wonchi {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 400px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  address {
+    margin-top: 5px;
+    font-style: normal;
+    justify-content: start;
+  }
+  
+  
+  
+  
+  .visited {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    list-style: none;
+    background-color: none;
+    padding: 10px;
+    color: white;
+  }
+  
+ 
+  
+  .para3 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    list-style: none;
+    background-color: none;
+    padding: 10px;
+    color: white;
+  }
+     
+  .video-container{align-items: center;
+margin-left: 400px;}
+.description{align-items: center;margin-left: 400px;}
+
+label[for="username"] {
+    color: crimson;
+    grid-column-gap: 2em;
+  }
+  
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: inherit;
+    background-color: seashell;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  img,
+  label,
+  input,
+  textarea,
+  button {
+    margin: 10px;
+  }
+  
+  form {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: center;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .visited,
+  .plantovisit {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap:10px;
+    background-color: none;;
+  }
+  
+  .visited h3,
+  .plantovisit h3 {
+    margin: 0;
+    background-color:none;
+  }
+  
+  .visited img,
+  .plantovisit img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .grid-item .para3 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: none;
+  }
+    
+  .para3 li {
+    margin-bottom: 10px;
+    color:white;
+  }
+  
+  .para3 address {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+  }
+
+
+
+
+
+  /* ################## */
+  @media (max-width: 768px) {
+    ul {
+      grid-template-columns: repeat(2, 1fr); /* Change to a two-column layout */
+    }
+  
+    li {
+      float: none; /* Remove float */
+      display: flex; /* Change to flex for vertical alignment */
+      justify-content: center; /* Center the items horizontally */
+    }
+  
+    li a {
+      padding: 10px 4px; /* Adjust the padding as needed */
+    }
+    li {
+        margin: 0 3px; /* Adjust the margin as needed for mobile */
+      }
+    
+      .social-media {
+        margin-right: 3px; /* Adjust the margin as needed for mobile */
+      }
+    
+      .social-media img {
+        height: 16px; /* Adjust the image size as needed for mobile */
+        width: 16px;
+      }
+      .friendpic,
+  .debrepic,
+  .lalibela,
+  .wonchi {
+    max-width: 100%; /* Adjust the maximum width to fit the container */
+    height: auto;
+    margin: 0; /* Remove the left margin */
+  }
+
+  .video-container {
+    width: 100%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    width: 100%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+
+  form {
+    max-width: 100%; /* Adjust the maximum width to fit the screen */
+    margin: 0;
+    padding: 0 10px; /* Add padding to the sides */
+  }
+
+  input,
+  textarea {
+    margin-bottom: 5px; /* Reduce the margin-bottom for better spacing */
+  }
+
+  button {
+    width: 100%; /* Expand the button to full width */
+  }
+
+  .visited,
+  .plantovisit {
+    grid-template-rows: auto auto 1fr auto; /* Adjust the row template to fit the content */
+  }
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo {
+      margin-bottom: 10px;
+    }
+    
+    main.Hobbies {
+      grid-template-rows: auto;
+    }
+    
+    .sun,
+    .music,
+    .cook,
+    .books {
+      width: 100%;
+    }
+    
+    .sunpic,
+    .musicpic,
+    .cookpic,
+    .bookspic {
+      width: 100px;
+      height: 100px;
+    }
+    
+    footer {
+      text-align: center;
+    }
+  }
+  }
